@@ -7,6 +7,7 @@ import http from "http";
 import mongoose from "mongoose";
 import morgan from "morgan";
 import { config } from "./config/config";
+import userRoutes from "./routes/user";
 
 dotenv.config();
 
@@ -37,6 +38,7 @@ const StartServer = () => {
 	router.use(express.json());
 	router.use(helmet());
 	router.use(morgan("common"));
+	router.use("/api/v1/users", userRoutes);
 
 	http.createServer(router).listen(config.server.port);
 };
