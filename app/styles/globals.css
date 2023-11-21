@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	font-family: "Montserrat";
+}
+
+:root {
+	--main: #2b3674;
+	/* --mainHover: #3d446b; */
+	--grayMain: #a3aed0;
+	--buttonColor: rgb(147 51 234 / 1);
+	--buttonColorHover: rgb(126 34 206 / 1);
+
+	--red: #e31a1a;
+	--redHover: #b81111;
+
+	--orange: #ffb547;
+	--orangeHover: #e59d32;
+
+	--green: #01b574;
+	/* --buttonColor: #a175fe; */
+	/* --buttonColorHover: #7546da; */
+}
